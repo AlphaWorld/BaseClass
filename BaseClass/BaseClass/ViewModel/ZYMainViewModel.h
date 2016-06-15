@@ -9,5 +9,10 @@
 #import "ZYBaseVeiwModel.h"
 
 @interface ZYMainViewModel : ZYBaseVeiwModel
-
+<
+UITableViewDelegate,
+UITableViewDataSource
+>
+- (void)updata;
+@property (nonatomic, strong) RACSubject *complete;
 @end

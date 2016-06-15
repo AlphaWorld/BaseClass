@@ -24,7 +24,7 @@
     
     self.view.setBackgroundColor(VIEWDAYCOLOR,VIEWNIGHTCOLOR);
     
-    
+
 }
 
 - (ZYBaseController *)initWithViewModel:(id)viewModel{

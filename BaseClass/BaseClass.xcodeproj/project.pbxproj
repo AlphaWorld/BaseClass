@@ -28,6 +28,10 @@
 		18E589611D11251D005E7ECC /* UIView+Extesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E589601D11251D005E7ECC /* UIView+Extesion.m */; };
 		18E589671D113582005E7ECC /* ZYMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E589661D113582005E7ECC /* ZYMainViewModel.m */; };
 		18E5896A1D11588A005E7ECC /* ZYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E589691D11588A005E7ECC /* ZYMainViewController.m */; };
+		18E5896D1D115ED9005E7ECC /* ZYBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5896C1D115ED9005E7ECC /* ZYBaseCell.m */; };
+		18E589701D115F3B005E7ECC /* ZYCellDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5896F1D115F3B005E7ECC /* ZYCellDataAdapter.m */; };
+		18E589741D1162CE005E7ECC /* ZYDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E589731D1162CE005E7ECC /* ZYDayCell.m */; };
+		18E589771D1162DD005E7ECC /* ZYNightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E589761D1162DD005E7ECC /* ZYNightCell.m */; };
 		A9590C12DC99E04B924F3564 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B8E51C720E0EFCAE15F137 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +100,14 @@
 		18E589661D113582005E7ECC /* ZYMainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMainViewModel.m; sourceTree = "<group>"; };
 		18E589681D11588A005E7ECC /* ZYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMainViewController.h; sourceTree = "<group>"; };
 		18E589691D11588A005E7ECC /* ZYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMainViewController.m; sourceTree = "<group>"; };
+		18E5896B1D115ED9005E7ECC /* ZYBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseCell.h; sourceTree = "<group>"; };
+		18E5896C1D115ED9005E7ECC /* ZYBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCell.m; sourceTree = "<group>"; };
+		18E5896E1D115F3B005E7ECC /* ZYCellDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCellDataAdapter.h; sourceTree = "<group>"; };
+		18E5896F1D115F3B005E7ECC /* ZYCellDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCellDataAdapter.m; sourceTree = "<group>"; };
+		18E589721D1162CE005E7ECC /* ZYDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDayCell.h; sourceTree = "<group>"; };
+		18E589731D1162CE005E7ECC /* ZYDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDayCell.m; sourceTree = "<group>"; };
+		18E589751D1162DD005E7ECC /* ZYNightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNightCell.h; sourceTree = "<group>"; };
+		18E589761D1162DD005E7ECC /* ZYNightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNightCell.m; sourceTree = "<group>"; };
 		34B8E51C720E0EFCAE15F137 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D6BC8E3CA1386069CF5A22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D923117310AB1801609A499 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +227,7 @@
 		18E5892A1D10F448005E7ECC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18E589711D1162B2005E7ECC /* cell */,
 				18E589681D11588A005E7ECC /* ZYMainViewController.h */,
 				18E589691D11588A005E7ECC /* ZYMainViewController.m */,
 				18E5892C1D10F589005E7ECC /* BaseClass */,
@@ -238,6 +251,8 @@
 				18E5894B1D1102D5005E7ECC /* ZYBaseController.m */,
 				18E589581D1122E0005E7ECC /* ZYBaseNavigationController.h */,
 				18E589591D1122E0005E7ECC /* ZYBaseNavigationController.m */,
+				18E5896B1D115ED9005E7ECC /* ZYBaseCell.h */,
+				18E5896C1D115ED9005E7ECC /* ZYBaseCell.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -278,6 +293,8 @@
 				18E589481D1101DA005E7ECC /* HttpRequest.m */,
 				18E589521D1104B3005E7ECC /* ZYTopicColorManager.h */,
 				18E589531D1104B3005E7ECC /* ZYTopicColorManager.m */,
+				18E5896E1D115F3B005E7ECC /* ZYCellDataAdapter.h */,
+				18E5896F1D115F3B005E7ECC /* ZYCellDataAdapter.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -324,6 +341,17 @@
 				18E5893D1D10F8C5005E7ECC /* GCDTimer.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		18E589711D1162B2005E7ECC /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				18E589721D1162CE005E7ECC /* ZYDayCell.h */,
+				18E589731D1162CE005E7ECC /* ZYDayCell.m */,
+				18E589751D1162DD005E7ECC /* ZYNightCell.h */,
+				18E589761D1162DD005E7ECC /* ZYNightCell.m */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		427D82F8440C560B62CC5BBB /* Frameworks */ = {
@@ -525,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E589671D113582005E7ECC /* ZYMainViewModel.m in Sources */,
+				18E589771D1162DD005E7ECC /* ZYNightCell.m in Sources */,
 				18E589541D1104B3005E7ECC /* ZYTopicColorManager.m in Sources */,
 				18E5893E1D10F8C5005E7ECC /* GCDGroup.m in Sources */,
 				18E589491D1101DA005E7ECC /* HttpRequest.m in Sources */,
@@ -534,11 +563,14 @@
 				18E588F71D10EB08005E7ECC /* main.m in Sources */,
 				18E5896A1D11588A005E7ECC /* ZYMainViewController.m in Sources */,
 				18E589411D10F8C5005E7ECC /* GCDTimer.m in Sources */,
+				18E589741D1162CE005E7ECC /* ZYDayCell.m in Sources */,
 				18E5895A1D1122E0005E7ECC /* ZYBaseNavigationController.m in Sources */,
 				18E589611D11251D005E7ECC /* UIView+Extesion.m in Sources */,
 				18E5893F1D10F8C5005E7ECC /* GCDQueue.m in Sources */,
+				18E5896D1D115ED9005E7ECC /* ZYBaseCell.m in Sources */,
 				18E589401D10F8C5005E7ECC /* GCDSemaphore.m in Sources */,
 				18E589571D1121D9005E7ECC /* ZYBaseVeiwModel.m in Sources */,
+				18E589701D115F3B005E7ECC /* ZYCellDataAdapter.m in Sources */,
 				18E5894C1D1102D5005E7ECC /* ZYBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
