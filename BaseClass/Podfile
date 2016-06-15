@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+use_frameworks!
+
+pod 'ReactiveCocoa'
+pod 'Masonry'
+pod 'MBProgressHUD'
+pod 'pop'
+pod 'YYKit'
+pod 'GPUImage'
+pod 'AFNetworking'
