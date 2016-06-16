@@ -12,7 +12,7 @@
 Cell适配器功能
 
 ```Object-c
-//继承ZYBaseCell 实现这三个方法
+//继承ZYBaseCell 实现这4个方法
 - (void)loadContent{
 
 }
@@ -37,3 +37,11 @@ cell.dataAdapter = dataAdaper;
 [cell loadContent];
 return cell;
 ```
+```
+//cell 的点击事件
+   ZYBaseCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell selectCell];
+```
+
+
+
