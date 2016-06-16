@@ -55,6 +55,13 @@
     return dataAdaper.cellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZYBaseCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell selectCell];
+}
+
+
 - (RACSubject *)complete
 {
     if (!_complete) {

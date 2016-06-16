@@ -13,6 +13,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.setBackgroundColor(VIEWDAYCOLOR,VIEWNIGHTCOLOR);
         [self setupCell];
         [self buildSubview];
     }
@@ -28,6 +29,9 @@
 }
 - (void)buildSubview{
     
+    
+}
+- (void)selectCell{
     
 }
 - (void)awakeFromNib {

@@ -35,10 +35,15 @@
                 UINavigationBar *nar    = (UINavigationBar *)self;
                 nar.barTintColor        = self.backgroundColor;
                 nar.tintColor           = theme != 1?daycolor:night;
-                nar.titleTextAttributes = @{NSForegroundColorAttributeName:theme != 1?daycolor:night};
+                nar.titleTextAttributes = @{NSForegroundColorAttributeName:theme != 0?daycolor:night};
                 [[UIApplication sharedApplication] setStatusBarStyle:
                  theme != 1?UIStatusBarStyleDefault:UIStatusBarStyleLightContent];
             }
+            if([self isKindOfClass:[UILabel class]]){
+                UILabel *label = (UILabel *)self;
+                label.textColor = theme != 0?[UIColor colorWithWhite:0.800 alpha:1.000]:night;
+            }
+            
         }];
         [[ZYTopicColorManager sharedTheSingletion] bindTheme];
         return self;

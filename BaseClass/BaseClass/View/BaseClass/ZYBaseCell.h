@@ -39,4 +39,5 @@
 - (void)loadContent;
 - (void)setupCell;
 - (void)buildSubview;
+- (void)selectCell;
 @end

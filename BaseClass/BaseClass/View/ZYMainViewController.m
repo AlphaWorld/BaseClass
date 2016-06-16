@@ -20,6 +20,7 @@
 @implementation ZYMainViewController
 
 - (void)viewDidLoad {
+    self.title = @"主题切换";
     [super viewDidLoad];
     self.tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 0) style:UITableViewStylePlain];
     [self.view addSubview:self.tableview];
